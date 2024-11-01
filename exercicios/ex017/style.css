@@ -1,0 +1,27 @@
+@charset "UTF-8" ;
+
+  /*MEDIDAS ABSOLUTAS:
+    cm, mm, in, (px), pt, pc
+    MEDIDAS RELATIVAS:
+    (em), ex, rem, vw, vh, %
+    16px geralmete é igual a 1em
+   
+---------------------------------------
+
+   /*Shorthand font
+   sequencia:
+   1*font style
+   2*font weight
+   3*font size
+   4*font family
+   EXEMPLO ABAIXO
+   */ 
+
+h1 {
+    font: italic bolder 3em 'Work Sans', sans-serif;
+}
+
+h2 {
+    font: bold 2em 'Work Sans';
+}
+

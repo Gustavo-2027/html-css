@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Qualquer coisa';
+            src: url('./fonts/Jackbrush.otf') format('opentype');
+            font-weight: normal;
+            font-size: normal;
+            /*Tipos de fomat: 
+            - opentype (otf)
+            - opentruetype (ttf)
+            - embedded-opentype 
+            - truetype-aat
+            - svg
+            */
+        }
+
+        @font-face {
+            font-family: 'Pervitina';
+            src: url('fonts/Pervitina-Dex-FFP.ttf') format(opentype);
+            font-weight: normal;
+            font-size: normal;
+        }
+
+        body {
+            font-family: 'Qualquer coisa';
+            font-weight: normal;
+            font-size: small;
+        }
+
+        h1 {
+            font-family: 'Pervitina';
+            font-size: 3em;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut possimus pariatur obcaecati deleniti amet autem, asperiores animi nulla reiciendis delectus quaerat aut incidunt perferendis. Obcaecati delectus deserunt nobis. Excepturi, doloribus!</p>
+</body>
+</html>
