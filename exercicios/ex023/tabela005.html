@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }     
+        
+        col.cnome {
+            background-color: greenyellow;
+        }
+
+        col.csexo {
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Gustavo Silva</td>
+            <td>M</td>
+            <td>17</td>
+            <td>Desenvovedor</td>
+        </tr>
+        <tr>
+            <td>Vivien</td>
+            <td>F</td>
+            <td>18</td>
+            <td>Desenvolvedora</td>
+        </tr>
+        <tr>
+            <td>Sandra Juliana</td>
+            <td>F</td>
+            <td>41</td>
+            <td>Revisora</td>
+        </tr>
+    </table>    
+</body>
+</html>
