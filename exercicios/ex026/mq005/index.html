@@ -4,21 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Média Query</title>
-    <style>
-        body {
-            background-image: url(/ex026/imagens/back-tablet.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            height: 95vh;
-            width: 98vw;
-    
-        }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
-    <div> 
+<body onresize="mudouTamanho">
+    <header>
+        <h1>Meu Site</h1>
+        <i class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Média Query</h2>
+            <p>
+                A media query (consulta de mídia) é uma técnica essencial no design responsivo, que permite aplicar estilos CSS diferentes dependendo das características do dispositivo em que a página está sendo visualizada, como o tamanho da tela, a resolução, a orientação (retrato ou paisagem), entre outras. Ela ajuda a criar layouts flexíveis que se adaptam a diferentes tamanhos de tela, proporcionando uma melhor experiência de usuário em dispositivos como smartphones, tablets e desktops.
+            </p>
+            <p>
+                As media queries são inseridas dentro de uma folha de estilo CSS e são ativadas quando certas condições são atendidas. Por exemplo, se a largura da tela for inferior a 600 pixels, uma regra de estilo pode ser aplicada.
+            </p>
+            <p>
+                As media queries são um pilar fundamental no design responsivo, permitindo que a interface de um site ou aplicação se ajuste dinamicamente ao tamanho da tela do usuário. O conceito de mobile-first, por exemplo, foca em criar um design simples e otimizado para dispositivos móveis e, em seguida, usar media queries para ampliar a experiência para telas maiores.
+            </p>
+            <p>
+                Priorize a simplicidade: Comece com o design para dispositivos menores (mobile-first) e adicione complexidade à medida que a tela se torna maior.
+                Testes em dispositivos reais: Embora as media queries sejam uma ótima ferramenta, é importante testar seu site em dispositivos reais para garantir que a experiência do usuário seja fluida.
+                Desempenho: Embora as media queries ajudam a criar layouts adaptáveis, é importante também otimizar os recursos do site, como imagens e scripts, para garantir boa performance em diferentes dispositivos.
+                As media queries são uma ferramenta poderosa para criar interfaces flexíveis e responsivas, garantindo uma experiência de usuário otimizada em qualquer dispositivo.
+            </p>
 
-    </div>
+
+        </article>
+    </main>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {itens.style.display = 'none'}
+        }
+
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {itens.style.display = 'block'}
+        }
+    </script>
 </body>
 </html>
